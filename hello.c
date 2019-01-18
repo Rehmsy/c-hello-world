@@ -1,6 +1,11 @@
+#include <string.h>
 #include <stdio.h>
 
 int main(void)
 {
-  printf("hello, world \n");
+  char name[40];
+
+  printf("yo. please enter your name:\n");
+  fgets(name, 40, stdin);
+  printf("hello, %s", name);
 }
